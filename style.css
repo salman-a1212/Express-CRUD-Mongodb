@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Ubuntu", sans-serif;
+}
+
+h2,
+h1 {
+  text-align: center;
+  margin: 25px;
+}
+
+.add-user {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.userdata {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  align-content: center;
+  background-color: #ddd;
+  grid-gap: 10px;
+}
+
+.input-con {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+form label {
+  display: inline-block;
+}
+
+form input {
+  margin: 25px;
+  padding: 5px;
+}
+
+textarea {
+  margin: 10px;
+}
+
+.btn-con {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ddd;
+  padding: 10px;
+}
+
+.add-btnc,
+.update-btnc,
+.view-btnc,
+.delete-btnc {
+  margin: 10px;
+  padding: 10px;
+}
+
+#add,
+#update,
+#view,
+#delete {
+  padding: 5px 10px;
+  background: #111;
+  color: #ddd;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.responsec {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 50px 0;
+  background-color: #ddd;
+  padding: 5px;
+  border: 1px solid #111;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.table {
+  margin: 50px;
+}
+
+th {
+  border-bottom: 1px dashed #111;
+}
