@@ -27,7 +27,7 @@ const getUsers = () => {
       const users = response.data;
       // console.log(users)
       const userList = users.map((user) => {
-        return ` <tr> <td> ${user.name} </td> <td> ${user.email} </td> <td> ${user.address} </td></tr>`;
+        return ` <tr> <td> ${user._id} </td><td> ${user.name} </td> <td> ${user.email} </td> <td> ${user.address} </td></tr>`;
       });
       result.innerHTML = "";
       result.innerHTML = userList.join("");
@@ -96,7 +96,7 @@ const getUser = () => {
     .then(function (response) {
       console.log(response.data);
       const users = response.data;
-      result.innerHTML = ` <tr> <td> ${users.name} </td> <td> ${users.email} </td> <td> ${users.address} </td></tr>`;
+      result.innerHTML = ` <tr> <td> ${users._id} </td><td> ${users.name} </td> <td> ${users.email} </td> <td> ${users.address} </td></tr>`;
     })
     .catch(function (error) {
       console.log(error);
