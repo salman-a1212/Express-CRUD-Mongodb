@@ -6,6 +6,7 @@ import mongoose from "mongoose";
 mongoose.connect(
   "mongodb+srv://admindb:RvP7P3GK7YE1Aq8T@syaic-assign.c8no6.mongodb.net/crud-app?retryWrites=true&w=majority"
 );
+
 const User = mongoose.model("User", {
   name: String,
   email: String,
@@ -51,6 +52,7 @@ app.post("/user", (req, res) => {
       email: req.body.email,
       address: req.body.address,
     });
+
     newUser.save().then(() => {
       console.log("user created success");
       res.send("users created");
