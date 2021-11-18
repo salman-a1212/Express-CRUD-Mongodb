@@ -13,7 +13,7 @@ h1 {
   margin: 25px;
 }
 
-.add-user {
+/* .add-user {
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -95,4 +95,11 @@ textarea {
 
 th {
   border-bottom: 1px dashed #111;
-}
+} */
+
+/* .form-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+} */
